@@ -16,7 +16,7 @@ class TestInkWellState extends State <TestInkWell> {
         child: InkWell(
           child: Text('InkWell Test'),
           onTap: (){
-            var  mySnackbarContent  = SnackBar(content: Text('ElevatedButton'));
+            var  mySnackbarContent  = SnackBar(content: Text('InkWell Test'));
             ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
             }
         ),

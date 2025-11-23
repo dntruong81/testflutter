@@ -21,10 +21,10 @@ class MySnackBarState extends State<MySnackBar>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Hello World'),
+            Text('Test Snackbar'),
             ElevatedButton(
                 onPressed: (){
-                  var  mySnackbarContent  = SnackBar(content: Text('ElevatedButton'));
+                  var  mySnackbarContent  = SnackBar(content: Text('Xin chao lop 16DTH'));
                   ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
                 },
                 child: Text('Show Snackbar'))

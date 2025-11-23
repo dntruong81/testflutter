@@ -24,12 +24,14 @@ class TestGridViewState extends State<TestGridView> {
             SizedBox(
               height: 200,
               width: 200,
-              child: GridView.count(crossAxisCount: 2,
+              child: GridView.count(
+                  crossAxisCount: 3,
                 children: [
                   Container(color: Colors.blue,child: Image.asset('assets/trolaitruonghoc_1.png')),
-                  Container(color: Colors.blue,child: Image.asset('images/trolaitruonghoc_2.png')),
+                  Container(color: Colors.red,child: Image.asset('images/trolaitruonghoc_2.png')),
                   Container(color: Colors.amber),
-                  Container(color: Colors.blue)
+                  Container(color: Colors.blue),
+                  Container(color: Colors.red)
                 ]
               ),
             ),
@@ -40,7 +42,7 @@ class TestGridViewState extends State<TestGridView> {
               width: 200,
               child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
+                    crossAxisCount: 3,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                   ),
@@ -48,7 +50,7 @@ class TestGridViewState extends State<TestGridView> {
                   itemBuilder: (context,index){
                     return Container(
                       color: Colors.primaries[index % Colors.primaries.length],
-                      child: Text('item: $index'),
+                      child: Text('phan tu thu: $index'),
                     );
                   }),
             )

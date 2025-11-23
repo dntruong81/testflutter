@@ -42,8 +42,8 @@ class TestPushNamed extends StatefulWidget {
 }
 
 class TestPushNamedState extends State<TestPushNamed> {
-  String data1 = 'Doan Nhut Truong';
-  Student data2 = Student('Doan Nhut Truong','1990784');
+  String data1 = 'Nguyen van A';
+  Student data2 = Student('Nguyen Van B','1990784');
   String _getValue ='';
   @override
   Widget build(BuildContext context) {
@@ -61,15 +61,15 @@ class TestPushNamedState extends State<TestPushNamed> {
                 });
               },
               icon: Icon(Icons.navigate_next),
-              label: Text('Trang kế tiếp 1'),
+              label: Text('Chuyển sang màn hình 1'),
             ),
-            SizedBox(height: 100,),
+            SizedBox(height: 20,),
             TextButton.icon(
               onPressed: () {
                 Navigator.pushNamed(context, Routs.Screen_2,arguments: data2);
               },
               icon: Icon(Icons.navigate_next),
-              label: Text('Trang kế tiếp 2'),
+              label: Text('Chuyển sang màn hình 2'),
             ),
             Text('Gia tri nhan ve: $_getValue'),
           ],
@@ -93,7 +93,7 @@ class SeconDisplay_1 extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 100),
-            Text('Nha gia tri truyen qua: $_args'),
+            Text('Nhan gia tri truyen qua: $_args'),
             TextField(
               controller: controller,
               decoration: InputDecoration(hintText: 'Nhập họ và tên'),

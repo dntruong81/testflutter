@@ -25,11 +25,12 @@ class TestListViewState extends State <TestListView> {
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(
-                      title: Text('Card số $index'),
-                      leading: Icon(Icons.star),
-                      trailing: Icon(Icons.arrow_forward_ios),
+                      title: Text('Muc số $index'),
+                      leading: Icon(Icons.add),
+                      trailing: Icon(Icons.access_time),
                       onTap: () {
-                        print('Bạn đã chọn mục $index');
+                        var  mySnackbarContent  = SnackBar(content: Text('Bạn đã chọn mục $index'));
+                        ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
                       },
                     ),
                   );
@@ -47,7 +48,8 @@ class TestListViewState extends State <TestListView> {
                     leading: Icon(Icons.star),
                     trailing: Icon(Icons.arrow_forward_ios),
                     onTap: () {
-                      print('Bạn đã chọn mục $index');
+                      var  mySnackbarContent  = SnackBar(content: Text('Bạn đã chọn mục $index'));
+                      ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
                     },
                   );
                 },
