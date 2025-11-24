@@ -12,6 +12,7 @@ import 'flexible.dart';
 import 'stack.dart';
 import 'radiodemo.dart';
 import 'checkbox.dart';
+import 'drawermenu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MyCheckbox()
+      home: MyDrawerMenu()
     );
   }
 }
