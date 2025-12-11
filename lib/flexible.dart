@@ -17,7 +17,7 @@ class MyFlexibleState extends State<MyFlexible> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Flexible(child: Container(color: Colors.yellow,height: 100,),fit:FlexFit.loose),
+            Flexible(child: Container(color: Colors.yellow),flex: 3,),
             Flexible(child: Container(color: Colors.green)),
             Flexible(child: Container(color: Colors.red))
           ],

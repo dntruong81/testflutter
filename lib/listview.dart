@@ -21,7 +21,7 @@ class TestListViewState extends State <TestListView> {
           children: [
           Flexible(
             child: ListView.builder(
-                itemCount: 5,
+                itemCount: 3,
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(

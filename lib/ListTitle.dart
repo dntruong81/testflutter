@@ -23,7 +23,8 @@ class MyListTitleState extends State<MyListTitle> {
               subtitle: Text('Thong tin bo sung'),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: (){
-
+                var  mySnackbarContent  = SnackBar(content: Text('Xin chao lop 16DTH1'));
+                ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
               },
             ),
           ],

@@ -27,8 +27,13 @@ class TestFieldTextState extends State<TestFieldText> {
                 border: OutlineInputBorder(),
                 hintText: 'Nhap ho va ten',
                 labelText: 'Nhap thong tin',
-                prefixIcon: Icon(Icons.add_call),
+                prefixIcon: Icon(Icons.person),
               ),
+              onChanged: (value){
+                setState(() {
+                  noidungnhap = value;
+                });
+              },
             ),
             TextButton(onPressed: (){
               setState(() {

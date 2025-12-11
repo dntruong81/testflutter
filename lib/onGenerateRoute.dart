@@ -53,7 +53,7 @@ class TestPushNamedState extends State<TestPushNamed> {
               icon: Icon(Icons.navigate_next),
               label: Text('Trang kế tiếp 1'),
             ),
-            SizedBox(height: 100,),
+            SizedBox(height: 10,),
             TextButton.icon(
               onPressed: () {
                 Navigator.pushNamed(context, Routs.Screen_2);

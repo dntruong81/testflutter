@@ -21,9 +21,7 @@ class MyStackState extends State<MyStack> {
             Container(width: 200, height: 200, color: Colors.red),
             Container(width: 180, height: 180, color: Colors.yellow),
             Positioned(
-              left: -20,
-              bottom: -50,
-              child: Container(width: 160, height: 160, color: Colors.green),
+                  child: Container(width: 160, height: 160, color: Colors.green),
             ),
           ],
         ),

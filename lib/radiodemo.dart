@@ -9,8 +9,8 @@ class MyRadio extends StatefulWidget {
 }
 
 class MyRadioState extends State<MyRadio> {
-  int? _gioitinh = 0; //Nam = 0,Nữ = 1
-  int? _gioitinh2 = 0; //Nam = 0,Nữ = 1
+  int? _gioitinh = 1; //Nam = 0,Nữ = 1
+  int? _gioitinh2 = 1; //Nam = 0,Nữ = 1
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

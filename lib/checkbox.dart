@@ -19,7 +19,7 @@ class MyCheckboxState extends State<MyCheckbox> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-                Text('Checkbox Demo'),
+              Text('Checkbox Demo'),
               Checkbox(value: giatri1,
                   checkColor: Colors.greenAccent,
                   activeColor: Colors.red,
