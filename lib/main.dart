@@ -13,6 +13,7 @@ import 'stack.dart';
 import 'radiodemo.dart';
 import 'checkbox.dart';
 import 'drawermenu.dart';
+import 'package:testflutter/MediaQuery.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MyHomePage(title: 'Xin chao Flutter',) //MyHomePage(title: 'Ứng dụng 1'),
+      home: MyMediaQueryWidget() //MyHomePage(title: 'Ứng dụng 1'),
     );
   }
 }

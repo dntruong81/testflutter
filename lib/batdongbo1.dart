@@ -54,7 +54,7 @@ class BatDongBoPageState extends State<BatDongBoPage> {
                 message = await createOderMessage();
                 setState(() {});
               },
-              icon: Icon(Icons.add_alert_sharp),
+              icon: Icon(Icons.get_app_sharp),
             ),
           ],
         ),

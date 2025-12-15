@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'snackbar.dart';
+import 'card.dart';
+import 'testfieldtext.dart';
 
 void main() {
   runApp(MyApp1());
@@ -8,7 +11,7 @@ class MyApp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(home: MyHomePage1());
+    return MaterialApp(home: TestFieldText());
   }
 }
 
@@ -28,24 +31,18 @@ class MyHomePage1Sate extends State<MyHomePage1> {
     // TODO: implement build
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text('Ung dung dau tien'),
-      ),
-      body: Center(
+      body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('So lan da nhan nhut: $dem')],
+          children: [
+            Text('text 1'),
+            Text('text 2'),
+            Text('text 3'),
+            Text('text 4'),
+        
+          ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            dem++;
-          });
-        },
-        child: Icon(Icons.add_alert),
-      ),
+
     );
   }
 }

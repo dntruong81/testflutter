@@ -16,15 +16,42 @@ class MySnackBarState extends State<MySnackBar>{
       appBar: AppBar(
         title: Text('Test Snackbar'),
         backgroundColor: Colors.blue,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search), // Biểu tượng tìm kiếm
+            onPressed: () {
+              // Xử lý khi nhấn nút tìm kiếm
+              print('Đã nhấn tìm kiếm');
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.notifications), // Biểu tượng thông báo
+            onPressed: () {
+              // Xử lý khi nhấn nút thông báo
+              print('Đã nhấn thông báo');
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(
+              'Xin chào thế giới!',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
             Text('Test Snackbar'),
             ElevatedButton(
                 onPressed: (){
-                  var  mySnackbarContent  = SnackBar(content: Text('Xin chao lop 16DTH'));
+                  var  mySnackbarContent  = SnackBar(content: Text('Hello 16DTH01'));
                   ScaffoldMessenger.of(context).showSnackBar(mySnackbarContent);
                 },
                 child: Text('Show Snackbar'))
