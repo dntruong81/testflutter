@@ -10,7 +10,7 @@ Future<String> createOderMessage() async {
 }
 
 Future<String> getUserMessage() async {
-  return (Future.delayed(Duration(seconds: 10), () => 'Da doi kq tra ve'));
+  return (Future.delayed(Duration(seconds: 10), () => 'Da hoan thanh'));
 }
 
 class MyApp extends StatelessWidget {
@@ -54,7 +54,7 @@ class BatDongBoPageState extends State<BatDongBoPage> {
                 message = await createOderMessage();
                 setState(() {});
               },
-              icon: Icon(Icons.get_app_sharp),
+              icon: Icon(Icons.add),
             ),
           ],
         ),

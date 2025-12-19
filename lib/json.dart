@@ -19,7 +19,8 @@ void main() {
      ]''';
   //Giai ma chuoi json thanh danh sach cac json
   var jsonDatas = jsonDecode(jsonString);
-  print(jsonDatas.runtimeType);//Ket qua la danh sach cac json
+  print('Kieu cua jsonDatas:');//Ket qua la danh sach cac json
+  print(jsonDatas.runtimeType);
   //Lay mot json: la phan tu cua List json
   Map<String,dynamic> jsonData = jsonDatas[2];
   print(jsonData.runtimeType);

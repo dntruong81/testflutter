@@ -42,7 +42,7 @@ class TestPushNamed extends StatefulWidget {
 }
 
 class TestPushNamedState extends State<TestPushNamed> {
-  String data1 = 'Đoàn Nhựt Trường';
+  String data1 = 'Nguyê Văn A';
   Student data2 = Student('Nguyen Van B','1990784');
   String _getValue ='';
   @override
